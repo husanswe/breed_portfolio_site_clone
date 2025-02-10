@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio - Bog'lanish</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="./css/shared.css">
+        <link rel="stylesheet" href="./css/contact.css">
+    </head>
+    <body>
+        <!-- Header section -->
+            <header class="main-header">
+                <div class="container">
+                <div class="main-header__brand">
+                    <a href="indexyz.html">
+                        <img src="./images/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <nav class="main-navigation">
+                    <ul class="main-navigation__items">
+                        <li class="main-navigation__item">
+                            <a href="./indexyz.html">Asosiy</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a href="#">Men haqimda</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a href="#">Xizmatlar</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a href="#">Mijozlar</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a href="#">Sheriklar</a>
+                        </li>
+                        <li class="main-navigation__item active">
+                            <a href="./contact.html">Bog'lanish</a>
+                        </li>
+                    </ul>
+                </nav>
+                </div>
+            </header>
+        <!-- /Header section -->
+
+        <div class="container">
+            <section class="contact">
+                <form action="/server/php" method="GET">
+                    <div class="section-title">
+                        <h2>Men bilan bog'laning</h2>
+                    </div>
+                    <textarea cols="30" rows="10" placeholder="Xabaringizni yozing" name="message"></textarea>
+                    <div class="half-row contact__fname">
+                        <input type="text" placeholder="Ismingizni yozing" name="fname">
+                    </div>
+                    <div class="half-row contact__email">
+                        <input type="email" placeholder="Emailingizni kiriting" name="email">
+                    </div>
+                    <input type="text" placeholder="Xat mazmuni" name="subject">
+                    <button class="button contact__send" type="submit">Xabarni jo'natish</button>
+                </form>
+            </section>
+        </div>
+
+        <!-- Footer section -->
+        <footer class="footer"> 
+            <div class="container">
+                <div class="footer__brand">
+                    <img src="./images/logo.png" alt="Logo">
+                </div>
+                <nav class="footer__navigation">
+                    <ul class="footer__navigation-items">
+                        <li class="footer__navigation-item">
+                            <a href="#">Asosiy</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="#">Men haqimda</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="#">Xizmatlar</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="#">Mijozlar</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a href="#">Sheriklar</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="footer__socials">
+                    <li class="footer__social">
+                        <a href="https://t.me/khusan_sulaymonov">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </li>
+                    <li class="footer__social">
+                        <a href="https://www.instagram.com/khusansulaymonov/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="footer__social">
+                        <a href="https://www.linkedin.com/in/khusan-sulaymonov-6a2495264/">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="footer__text">
+                    Copyright ©2025 All rights reserved | This template is made by Colorlib
+                </p>
+            </div>
+        </footer>
+        <!-- /Footer section -->
+    </body>
+</html>
