@@ -404,7 +404,7 @@ font-weight: lighter;
 
 /* Partners section styles */
 .partners {
-    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
