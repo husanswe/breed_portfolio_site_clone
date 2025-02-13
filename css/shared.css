@@ -491,6 +491,14 @@ a {
 
 .footer__brand img {
     width: 96px;
+    margin: 0;
+    display: block;
+}
+
+.footer__brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__navigation-items {
