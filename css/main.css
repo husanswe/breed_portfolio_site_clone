@@ -62,6 +62,7 @@
 .statistics {
     padding-top: 6.25rem; /* 100 / 16 = 6.25rem */
     display: flex;
+    justify-content: space-between;
 }
 
 .statistics__item {
@@ -513,7 +514,7 @@ font-weight: lighter;
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     /* Main section */
     .main-banner {
         background: none;
@@ -542,6 +543,11 @@ font-weight: lighter;
     }
 
     /* Statistics section */
+    .statistics {
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .statistics__item {
         width: 100%;
         margin-bottom: 20px;
