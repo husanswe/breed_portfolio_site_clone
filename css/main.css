@@ -62,15 +62,20 @@
 .statistics {
     padding-top: 6.25rem; /* 100 / 16 = 6.25rem */
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .statistics__item {
     width: 150px;
     background-color: #f8faff;
     text-align: center;
-    padding: 0.32rem 0.625rem;
+    padding: 0.32rem 0.94rem;
     margin-right: 1.5rem;
+    flex: 1 1 auto;
+    max-width: 120px;
 }
 
 .statistics__number {
@@ -421,7 +426,7 @@ font-weight: lighter;
     }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
     /* Main section */
     .main-section__image {
         display: none;
@@ -436,6 +441,13 @@ font-weight: lighter;
         text-align: center;
         justify-content: center;
     }
+
+    .statistics__item {
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: none;
+    }
+
     /* About me section */
     .about-me {
         padding: 1.5rem 0;
