@@ -435,6 +435,7 @@ font-weight: lighter;
     .main-section > div {
         width: 100%;
     }
+
     /* Statistics */
     .statistics {
         padding-top: 1rem;
@@ -474,6 +475,7 @@ font-weight: lighter;
         width: 48%;
         margin-bottom: 20px;
     }
+    
     /* Clients */
     .clients {
         padding: 1.5rem;
