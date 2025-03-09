@@ -439,6 +439,16 @@ font-weight: lighter;
     color: #ed239f;
 }
 
+.blog-item__date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.blog-item__date span {
+    display: flex;
+    align-items: center;
+}
 /* Partners section styles */
 .partners {
     padding-bottom: 6.25rem;
