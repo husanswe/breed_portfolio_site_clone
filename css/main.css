@@ -228,18 +228,26 @@
 }
 
 .portfolio-filters {
+    margin-bottom: 1.875rem;
     list-style: none;
-    padding-left: 0;
-    margin-top: 3.12rem;
+    padding: 0;
 }
 
 .portfolio-filters li {
     display: inline-block;
+    cursor: pointer;
     margin-right: 2.5rem;
-    font-size: 0.81rem;
+    font-size: 1rem;
     font-weight: 400;
     text-transform: uppercase;
-    cursor: pointer;
+    padding: 0.625rem 1.25rem;
+    transition: all 0.3s ease;
+    
+}
+
+.portfolio-filters li.active {
+    border-bottom: 0.125rem solid #007bff; /* 2px = 0.125rem */
+    color: #007bff;
 }
 
 .portfolio-filters li:hover,
@@ -252,38 +260,26 @@
     justify-content: space-between;
     position: relative;
     margin-top: 3.12rem; 
+    width: 100%;
 }
 
-.first_portfolio_container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: 100%;
-    width: 49%;
-}
-
+.first_portfolio_container,
 .second_portfolio_container {
     display: flex;
-    gap: 10px;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 49%;
+    flex-wrap: wrap;
 }
 
 .portfolio-item {
+    width: 33.33%; 
+    padding: 0.625rem;
     position: relative;
     cursor: pointer;
     box-sizing: border-box;
 }
 
-.portfolio-item-1 {
-    padding-left: 0;
-}
-
-.portfolio-item-2 {
-    position: absolute;
-    right: 0;
-    top: 0;
+.portfolio_item_twins {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .portfolio-item-3 {
@@ -292,8 +288,16 @@
     top: 322px;
 }
 
+.twins-container {
+    width: 50%; /* O‘z holicha qoldi, chunki bu foiz */
+    padding: 0.625rem; /* 10px = 0.625rem */
+    box-sizing: border-box;
+}
+
 .portfolio-item__image {
     width: 100%;
+    height: auto;
+    display: block;
 }
 
 .portfolio-item__overlay {
@@ -302,19 +306,23 @@
     top: 0;
     height: 100%;
     width: 100%;
-    z-index: 1;
-    transition: all 0.4s ease 0s;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-item__overlay {
+    opacity: 1;
 }
 
 .portfolio-item__info {
     position: absolute;
-    bottom: 44px;
-    left: 80px;
+    bottom: 1.25rem; 
+    left: 1.25rem;
     color: white;
     visibility: hidden;
     opacity: 0;
-    z-index: 1;
-    transition: all 0.4s ease 0s;
+    transition: opacity 0.3s ease;
 }
 
 .portfolio-item__info a {
@@ -330,9 +338,6 @@
 }
 
 .portfolio-item:hover .portfolio-item__info {
-    visibility: visible;
-    bottom: 24px;
-    left: 60px;
     opacity: 1;
 }
 
@@ -341,10 +346,6 @@
     gap: 10px;
     width: 100%;
     justify-content: space-between;
-}
-
-.twins-container {
-    width: 48%;
 }
 
 .twin-container {

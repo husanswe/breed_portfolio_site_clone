@@ -248,22 +248,20 @@
                     ishlarimni ko'ring
                 </div>
                 <ul class="portfolio-filters">
-                    <li class="active">Hammasi</li>
-                    <li>Mashxurlari</li>
-                    <li>Oxirgilari</li>
+                    <li class="active" data-filter="*">Hammasi</li>
+                    <li data-filter=".mashxur">Mashxurlari</li>
+                    <li data-filter=".oxirgi">Oxirgilari</li>
                 </ul>
                 <div class="portfolio-items">
                     <div class="first_portfolio_container">
-                        <div class="portfolio-item">
+                        <div class="portfolio-item mashxur">
                             <img src="./images/p1.png" alt="Portfolio image 1" class="portfolio-item__image">
                             <div class="portfolio-item__overlay"></div>
                             <div class="portfolio-item__info">
                                 <h4>
                                     <a href="#">Portfolio item 1</a>
                                 </h4>
-                                <p>
-                                    Ishim haqida
-                                </p>
+                                <p>Ishim haqida</p>
                             </div>
                         </div>
                         <div class="portfolio-item">
@@ -273,9 +271,7 @@
                                 <h4>
                                     <a href="#">Portfolio item 2</a>
                                 </h4>
-                                <p>
-                                    Ishim haqida
-                                </p>
+                                <p>Ishim haqida</p>
                             </div>
                         </div>
                     </div>
@@ -287,9 +283,7 @@
                                 <h4>
                                     <a href="#">Portfolio item 3</a>
                                 </h4>
-                                <p>
-                                    Ishim haqida
-                                </p>
+                                <p>Ishim haqida</p>
                             </div>
                         </div>
                         <div class="portfolio_item_twins">
@@ -300,9 +294,7 @@
                                     <h4>
                                         <a href="#">Portfolio item 4</a>
                                     </h4>
-                                    <p>
-                                        Ishim haqida
-                                    </p>
+                                    <p>Ishim haqida</p>
                                 </div>
                             </div>
                             <div class="twins-container portfolio-item" class="portfolio-item">
@@ -312,9 +304,7 @@
                                     <h4>
                                         <a href="#">Portfolio item 5</a>
                                     </h4>
-                                    <p>
-                                        Ishim haqida
-                                    </p>
+                                    <p>Ishim haqida</p>
                                 </div>
                             </div>
                         </div>
@@ -325,9 +315,7 @@
                                 <h4>
                                     <a href="#">Portfolio item 6</a>
                                 </h4>
-                                <p>
-                                    Ishim haqida
-                                </p>
+                                <p>Ishim haqida</p>
                             </div>
                         </div>
                     </div>
@@ -454,6 +442,10 @@
 
             </section>
         </div>
+        <!-- Masonry va Isotope kutubxonalarini qo'shish -->
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <script src="./script.js"></script>
         <!-- /Partners section -->
 
         <!-- Footer section -->
