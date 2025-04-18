@@ -588,7 +588,6 @@ font-weight: lighter;
         min-height: auto;
     }
 
-    
     .main-section__action {
         display: none;
     }
@@ -609,6 +608,7 @@ font-weight: lighter;
         margin-bottom: 40px;
     }
 
+
     /* Statistics section */
     .statistics {
         flex-direction: column;
@@ -622,9 +622,8 @@ font-weight: lighter;
         box-sizing: border-box;
     }
 
-    /* Services section */
-    
 
+    /* Services section */
     .service-card {
         width: 100%;
         flex-basis: auto;
@@ -638,7 +637,7 @@ font-weight: lighter;
     }
 
     .portfolio-items {
-        grid-template-columns: repeat(1, 1fr); /* Mobil qurilmalar uchun 1 ustun */
+        grid-template-columns: repeat(1, 1fr); /* Mobil devicelar uchun 1 ustun */
         flex-direction: column;
     }
 
@@ -664,5 +663,15 @@ font-weight: lighter;
         width: 100%;
         margin-right: 0;
         margin-bottom: 20px;
+    }
+
+    /* Footer */
+
+    .footer__brand {
+        padding-right: 25px;
+    }
+
+    .footer__socials {
+        padding-left: 15px;
     }
 }
