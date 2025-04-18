@@ -19,6 +19,42 @@
     left: 20px;
 }
 
+.header__buttons {
+    display: flex;
+    align-items: center;
+}
+
+/* Hamburger menu tugmasi */
+.header__menu-button {
+    display: none; /* Desktopda yashirin */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.625rem; /* 10px = 0.625rem */
+}
+
+.header__menu-button span {
+    display: block;
+    width: 1.5rem; /* 24px = 1.5rem */
+    height: 0.125rem; /* 2px = 0.125rem */
+    background: #333;
+    margin-bottom: 0.25rem; /* 4px = 0.25rem */
+    transition: all 0.3s ease;
+}
+
+/* Hamburger menu ochilganda animatsiya */
+.header__menu-button.active span:nth-child(1) {
+    transform: rotate(45deg) translate(0.3125rem, 0.3125rem); /* 5px = 0.3125rem */
+}
+
+.header__menu-button.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.header__menu-button.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(0.3125rem, -0.3125rem); /* 5px = 0.3125rem */
+}
+
 .main-section__welcome {
     font-size: 1rem;
     font-weight: 400;
@@ -470,6 +506,40 @@ font-weight: lighter;
 
     .main-section > div {
         width: 100%;
+    }
+
+    .header__menu-button {
+        display: block; /* Hamburger menu ko‘rinadi */
+    }
+
+    .header__nav {
+        display: none; /* Menyu yashirinadi */
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #fff;
+        padding: 1.25rem; /* 20px = 1.25rem */
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    }
+
+    .header__nav.active {
+        display: block; /* Menyu ochilganda ko‘rinadi */
+    }
+
+    .header__list {
+        flex-direction: column; /* Vertikal joylashadi */
+        gap: 0.625rem; /* 10px = 0.625rem */
+    }
+
+    .header__item {
+        width: 100%;
+    }
+
+    .header__link {
+        display: block;
+        padding: 0.625rem 0; /* 10px = 0.625rem */
+        font-size: 1.125rem; /* 18px = 1.125rem */
     }
 
     /* Statistics */
