@@ -292,9 +292,8 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background: rgba(19, 69, 230, 0.9);
-    opacity: 0;
-    transition: opacity 0.5s ease;
+    z-index: 1;
+    transition: all 0.4s ease 0s;
 }
 
 .portfolio-item:hover .portfolio-item__overlay {
@@ -303,11 +302,13 @@
 
 .portfolio-item__info {
     position: absolute;
-    bottom: 1.25rem; 
-    left: 1.25rem;
+    bottom: 2.75rem; 
+    left: 5rem;
     color: white;
+    visibility: hidden;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    z-index: 1;
+    transition: all 0.4s ease 0s;
 }
 
 .portfolio-item__info a {
@@ -319,10 +320,13 @@
     visibility: visible;
     top: 20px;
     left: 20px;
-    background: rgba(19,69,230,0.9);
+    background: rgba(19, 69, 230, 0.9);
 }
 
 .portfolio-item:hover .portfolio-item__info {
+    visibility: visible;
+    bottom: 1.5rem;
+    left: 3.75rem;
     opacity: 1;
 }
 
