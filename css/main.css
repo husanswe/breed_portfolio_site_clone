@@ -753,4 +753,8 @@ font-weight: lighter;
     .footer__socials {
         padding-left: 15px;
     }
+
+    .footer__text {
+        padding: 0;
+    }
 }
