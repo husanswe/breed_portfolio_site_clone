@@ -24,7 +24,7 @@
     align-items: center;
 }
 
-/* Hamburger menu tugmasi */
+/* Hamburger menu button */
 .header__menu-button {
     display: none; /* Desktopda yashirin */
     background: none;
@@ -509,7 +509,8 @@ font-weight: lighter;
     }
 
     .header__menu-button {
-        display: block; /* Hamburger menu ko‘rinadi */
+        display: block;        /* Hamburger menu ko‘rinadi */
+        margin-left: 170px;
     }
 
     .header__nav {
