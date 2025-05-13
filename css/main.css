@@ -564,6 +564,12 @@ font-weight: lighter;
         width: 100%;
     }
 
+    .about-me__action {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
     .about-me__image {
         display: none;
     }
