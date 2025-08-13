@@ -434,8 +434,9 @@ a {
     filter: blur(4px);
     border-radius: 4px;
 }
-/* Main header styles */
 
+
+/* Main header styles */
 .main-header {
     position: fixed;
     top: 0;
