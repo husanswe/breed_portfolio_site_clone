@@ -119,6 +119,7 @@
     margin-bottom: 0.32rem;
     background: linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -226,6 +227,7 @@
 
 .client-item__image img {
     width: 100%;
+    border-radius: 50px;
 }
 
 .client-item__info {
